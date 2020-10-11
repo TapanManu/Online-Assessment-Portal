@@ -1,0 +1,14 @@
+#examera{
+	width:400px;
+}
+#copyright{
+	height:10px;
+}
+#container{
+	box-shadow: 1px 2px 2px 1px  #e6eaed;
+}
+#copyright-container{
+	background-color: #f7f7f7;
+	width:100%;
+	color: #ccc;
+}
