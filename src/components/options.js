@@ -5,17 +5,11 @@ class QuestionCard extends Component {
     return (
       <div>
         <h1>Questions</h1>
-        <Form>
-          <Row>
-            <Col>
-              <Form.Control placeholder="First name" />
-            </Col>
-            <Col>
-              <Form.Control placeholder="Last name" />
-            </Col>
-          </Row>
-        </Form>
-        ;
+        <input
+          type="email"
+          className="form-control"
+          placeholder="Your e-mail"
+        />
       </div>
     );
   }
