@@ -8,7 +8,8 @@ import "./index.css";
 import registerServiceWorker from "./registerServiceWorker";
 // import Signup from "./components/signup";
 // import Instruction from "./components/instruction";
-import QuestionCard from "./components/options";
+import QuestionCard from "./components/question";
+// import SideNavPage from "./components/sidenav";
 ReactDOM.render(<QuestionCard />, document.getElementById("root"));
 
 registerServiceWorker();
