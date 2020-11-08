@@ -7,6 +7,8 @@ import {
   MDBContainer,
   MDBCol,
   MDBFooter,
+  MDBCardFooter,
+  MDBModalFooter,
 } from "mdbreact";
 class SideNav extends Component {
   render() {
@@ -14,35 +16,30 @@ class SideNav extends Component {
       <div>
         <MDBContainer className="mt-2">
           <MDBRow className="mb-2">
-            <MDBCol md="2">
-              <img
-                src="https://mdbootstrap.com/img/Others/documentation/1.jpg"
-                className="img-fluid"
-                alt=""
-              />
-            </MDBCol>
           </MDBRow>
-          <MDBRow center>
+          <MDBRow>
             <MDBCol xl="2" lg="3" md="4" className="mb-md-0 mb-4">
-              <MDBBtnGroup vertical>
-                <MDBBtn color="blue">Previous Tests</MDBBtn>
-                <MDBBtn color="blue">Subject Tests</MDBBtn>
-                <MDBBtn color="blue">Chapter Tests</MDBBtn>
-                <MDBBtn color="blue">Mock Tests</MDBBtn>
-                <MDBBtn color="blue">Rank List</MDBBtn>
+              <div class="btn-grp">
+              <MDBBtnGroup vertical className="py-2">
+                <MDBBtn color="white">Previous Tests</MDBBtn>
+                <MDBBtn color="white">Subject Tests</MDBBtn>
+                <MDBBtn color="white">Chapter Tests</MDBBtn>
+                <MDBBtn color="white">Mock Tests</MDBBtn>
+                <MDBBtn color="white">Rank List</MDBBtn>
               </MDBBtnGroup>
+              </div>
             </MDBCol>
           </MDBRow>
         </MDBContainer>
-        <MDBFooter align color="white" className="font-small pt-4 mt-4">
+        <MDBContainer align color="#ccc" className="font-small pt-4 mt-4">
           <div className="footer-copyright text-center py-3">
-            <MDBContainer>
+            <MDBModalFooter>
               <div className="mx-auto">
-                <MDBBtn color="green">Tapan Manu</MDBBtn>
+                <MDBBtn color="#f5f2f2">Tapan Manu</MDBBtn>
               </div>
-            </MDBContainer>
+            </MDBModalFooter>
           </div>
-        </MDBFooter>
+        </MDBContainer>
       </div>
     );
   }
