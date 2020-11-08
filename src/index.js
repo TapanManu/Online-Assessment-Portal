@@ -9,7 +9,8 @@ import registerServiceWorker from "./registerServiceWorker";
 // import Signup from "./components/signup";
 // import Instruction from "./components/instruction";
 // import QuestionCard from "./components/question";
+import Report from "./components/Report";
 import SideNav from "./components/sidenavbar";
-ReactDOM.render(<SideNav />, document.getElementById("root"));
+ReactDOM.render(<Report />, document.getElementById("root"));
 
 registerServiceWorker();
