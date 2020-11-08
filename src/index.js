@@ -12,6 +12,9 @@ import registerServiceWorker from "./registerServiceWorker";
 // import QuestionCard from "./components/question";
 //import SideNav from "./components/sidenavbar";
 import RankPage from './rankpage';
-ReactDOM.render(<RankPage/>, document.getElementById("root"));
+//ReactDOM.render(<RankPage/>, document.getElementById("root"));
+import Report from "./components/Report";
+import SideNav from "./components/sidenavbar";
+ReactDOM.render(<Report />, document.getElementById("root"));
 
 registerServiceWorker();
