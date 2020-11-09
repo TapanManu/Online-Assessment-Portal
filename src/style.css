@@ -48,6 +48,16 @@ body{
     background-color: rgb(255, 255, 255);
     box-shadow: 0 0 10px 0 rgba(0,0,0,.18);
 }
+.results-page-wrapper{
+    font-family:sans-serif;
+    margin-left:5%;
+    margin-top:5%;
+    margin-right:30%;
+    padding-bottom:5%;
+    
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.18);
+}
 
 .page-footer{
     position: relative;
@@ -64,4 +74,8 @@ body{
 body{
     padding-bottom:0px;
     background: #faf6f6;
+}
+
+.result-list{
+    margin-right:50%;
 }

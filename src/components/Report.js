@@ -11,7 +11,7 @@ import {
   Scatter,
   Chart,
 } from "react-chartjs-2";
-import { MDBContainer, MDBRow,MDBCol } from "mdbreact";
+import { MDBContainer, MDBRow,MDBCol, MDBCardBody } from "mdbreact";
 import DocsLink from "../components/docsLink";
 import SectionContainer from "../components/sectionContainer";
 import "./Pie.css";
@@ -44,7 +44,9 @@ const dataPie = {
 
 const Report = () => {
   return (
-    <MDBContainer>
+    <div class="report">
+      
+    <MDBCardBody>
       <MDBRow>
         <MDBCol>
           <div id="perc">
@@ -91,7 +93,8 @@ const Report = () => {
         </MDBCol>
       </MDBRow>
       <hr />
-    </MDBContainer>
+    </MDBCardBody>
+    </div>
   );
 };
 
