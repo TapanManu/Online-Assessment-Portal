@@ -1,6 +1,14 @@
-import React from "react";
+import React, { Fragment } from "react";
 import { Component } from "react";
-import { MDBInput, MDBRow, MDBCol, MDBBtn } from "mdbreact";
+import {
+  MDBInput,
+  MDBRow,
+  MDBCol,
+  MDBBtn,
+  MDBPagination,
+  MDBPageItem,
+  MDBPageNav,
+} from "mdbreact";
 class QuestionCard extends Component {
   render() {
     return (
@@ -149,13 +157,141 @@ class QuestionCard extends Component {
         </div>
         <div>
           <div class="custom-control custom-checkbox custom-control-inline">
-            <p>Marks : 4</p>
+            <MDBInput hint="Marks" type="number" outline />
           </div>
           <div class="custom-control custom-checkbox custom-control-inline">
             <MDBBtn style={{ float: "right" }} color="success">
               SUBMIT QUESTION
             </MDBBtn>
           </div>
+          <MDBRow>
+            <MDBCol className="mt-4">
+              <MDBPagination circle>
+                <MDBPageItem active>
+                  <MDBPageNav className="page-link">
+                    1 <span className="sr-only">(current)</span>
+                  </MDBPageNav>
+                </MDBPageItem>
+                <MDBPageItem>
+                  <MDBPageNav className="page-link">2</MDBPageNav>
+                </MDBPageItem>
+                <MDBPageItem>
+                  <MDBPageNav className="page-link">3</MDBPageNav>
+                </MDBPageItem>
+                <MDBPageItem>
+                  <MDBPageNav className="page-link">4</MDBPageNav>
+                </MDBPageItem>
+                <MDBPageItem>
+                  <MDBPageNav className="page-link">5</MDBPageNav>
+                </MDBPageItem>
+              </MDBPagination>
+            </MDBCol>
+            <MDBCol className="mt-4">
+              <MDBPagination circle>
+                <MDBPageItem active>
+                  <MDBPageNav className="page-link">
+                    1 <span className="sr-only">(current)</span>
+                  </MDBPageNav>
+                </MDBPageItem>
+                <MDBPageItem>
+                  <MDBPageNav className="page-link">2</MDBPageNav>
+                </MDBPageItem>
+                <MDBPageItem>
+                  <MDBPageNav className="page-link">3</MDBPageNav>
+                </MDBPageItem>
+                <MDBPageItem>
+                  <MDBPageNav className="page-link">4</MDBPageNav>
+                </MDBPageItem>
+                <MDBPageItem>
+                  <MDBPageNav className="page-link">5</MDBPageNav>
+                </MDBPageItem>
+              </MDBPagination>
+            </MDBCol>
+            <MDBCol className="mt-4">
+              <MDBPagination circle>
+                <MDBPageItem active>
+                  <MDBPageNav className="page-link">
+                    1 <span className="sr-only">(current)</span>
+                  </MDBPageNav>
+                </MDBPageItem>
+                <MDBPageItem>
+                  <MDBPageNav className="page-link">2</MDBPageNav>
+                </MDBPageItem>
+                <MDBPageItem>
+                  <MDBPageNav className="page-link">3</MDBPageNav>
+                </MDBPageItem>
+                <MDBPageItem>
+                  <MDBPageNav className="page-link">4</MDBPageNav>
+                </MDBPageItem>
+                <MDBPageItem>
+                  <MDBPageNav className="page-link">5</MDBPageNav>
+                </MDBPageItem>
+              </MDBPagination>
+            </MDBCol>
+            <MDBCol className="mt-4">
+              <MDBPagination circle>
+                <MDBPageItem active>
+                  <MDBPageNav className="page-link">
+                    1 <span className="sr-only">(current)</span>
+                  </MDBPageNav>
+                </MDBPageItem>
+                <MDBPageItem>
+                  <MDBPageNav className="page-link">2</MDBPageNav>
+                </MDBPageItem>
+                <MDBPageItem>
+                  <MDBPageNav className="page-link">3</MDBPageNav>
+                </MDBPageItem>
+                <MDBPageItem>
+                  <MDBPageNav className="page-link">4</MDBPageNav>
+                </MDBPageItem>
+                <MDBPageItem>
+                  <MDBPageNav className="page-link">5</MDBPageNav>
+                </MDBPageItem>
+              </MDBPagination>
+            </MDBCol>
+            <MDBCol className="mt-4">
+              <MDBPagination circle>
+                <MDBPageItem active>
+                  <MDBPageNav className="page-link">
+                    1 <span className="sr-only">(current)</span>
+                  </MDBPageNav>
+                </MDBPageItem>
+                <MDBPageItem>
+                  <MDBPageNav className="page-link">2</MDBPageNav>
+                </MDBPageItem>
+                <MDBPageItem>
+                  <MDBPageNav className="page-link">3</MDBPageNav>
+                </MDBPageItem>
+                <MDBPageItem>
+                  <MDBPageNav className="page-link">4</MDBPageNav>
+                </MDBPageItem>
+                <MDBPageItem>
+                  <MDBPageNav className="page-link">5</MDBPageNav>
+                </MDBPageItem>
+              </MDBPagination>
+            </MDBCol>
+            <MDBCol className="mt-4">
+              <MDBPagination circle>
+                <MDBPageItem active>
+                  <MDBPageNav className="page-link">
+                    1 <span className="sr-only">(current)</span>
+                  </MDBPageNav>
+                </MDBPageItem>
+                <MDBPageItem>
+                  <MDBPageNav className="page-link">2</MDBPageNav>
+                </MDBPageItem>
+                <MDBPageItem>
+                  <MDBPageNav className="page-link">3</MDBPageNav>
+                </MDBPageItem>
+                <MDBPageItem>
+                  <MDBPageNav className="page-link">4</MDBPageNav>
+                </MDBPageItem>
+                <MDBPageItem>
+                  <MDBPageNav className="page-link">5</MDBPageNav>
+                </MDBPageItem>
+              </MDBPagination>
+            </MDBCol>
+          </MDBRow>
         </div>
       </div>
     );
