@@ -2,24 +2,20 @@
 import React, { Component } from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import { MDBBtn, MDBNav,MDBNavLink, MDBCol, MDBRow, MDBContainer, MDBView, MDBIcon,MDBBtnGroup } from "mdbreact";
+import './style.css';
 
 class ExameraPage extends Component{
 render() {
   return (
-    
+    <div class="exampage">
     <MDBContainer className="mt-5">
        <BrowserRouter>
 
-<MDBNav className="p-sm-3 mb-3" style={{backgroundColor:"#eeeeee"}}>
-  <MDBNavLink to="#!" className="mx-auto" style={{color:"black"}}><MDBIcon icon="home" className="mr-sm-2"/>Home</MDBNavLink>
-  <MDBNavLink to="#!" className="mx-auto" style={{color:"black"}}><MDBIcon icon="bell" className="mr-sm-2"/>Notifications</MDBNavLink>
-  <MDBNavLink to="#!" className="mx-auto" style={{color:"black"}}><MDBIcon icon="cog" className="mr-sm-2"/>Settings</MDBNavLink>
-  <MDBNavLink to="#!" className="mx-auto" style={{color:"black"}}><MDBIcon icon="sign-out-alt" className="mr-sm-2"/>Logout</MDBNavLink>
-</MDBNav>
+
 </BrowserRouter>
       <p className="font-weight-bold">Exam Name/Question1</p>
        <p className="float-right">Mark 4</p>
-      <MDBRow className="p-sm-2 mt-sm-4">
+      <MDBRow className="p-sm-2 mt-sm-2">
         <MDBCol size="8">
         <p className="text-justify">Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit amet fermentum.
         Donec sed odio operae,
@@ -30,7 +26,7 @@ render() {
               <img src="https://d10lpgp6xz60nq.cloudfront.net/q-thumbnail/3912984.png" className="img-fluid" alt="Sample Question Image" />
             </MDBView>
     </MDBCol> 
-        <MDBCol size="4">
+        <MDBCol size="1">
           <div>
           
           <center>
@@ -67,7 +63,7 @@ render() {
   <MDBBtnGroup className="mr-auto">
     <MDBBtn outline className="mr-sm-5 mb-sm-4 font-weight-bold">1</MDBBtn>
     <MDBBtn outline className="mr-sm-5 mb-sm-4 font-weight-bold">2</MDBBtn>
-    <MDBBtn outline className="mr-sm-5  mb-sm-4 font-weight-bold">3</MDBBtn>
+    <MDBBtn outline className="mr-sm-5 mb-sm-4 font-weight-bold">3</MDBBtn>
     <MDBBtn outline className="mr-sm-5 mb-sm-4 font-weight-bold">4</MDBBtn>
     <MDBBtn outline className="mr-sm-5 mb-sm-4 font-weight-bold">5</MDBBtn>
     </MDBBtnGroup>
@@ -84,9 +80,8 @@ render() {
  
 
       </MDBRow>
-      
-     
     </MDBContainer>
+    </div>
   );
 }
 }

@@ -13,8 +13,8 @@ import registerServiceWorker from "./registerServiceWorker";
 //import SideNav from "./components/sidenavbar";
 import RankPage from './rankpage';
 //ReactDOM.render(<RankPage/>, document.getElementById("root"));
-import Result from "./resultpage";
+import Student from "./student/stud";
 import SideNav from "./components/sidenavbar";
-ReactDOM.render(<Result />, document.getElementById("root"));
+ReactDOM.render(<Student />, document.getElementById("root"));
 
 registerServiceWorker();

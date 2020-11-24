@@ -30,30 +30,22 @@ body{
     display: flex;
 }
 
-.rankwrapper{
-    display: block;
+.rank-wrapper{
+    display: inline;
+    
 }
 
 .rank-header{
     padding-top:15px;
     padding-left:15px;
+    
 }
-.page-wrapper{
-    font-family:sans-serif;
-    margin-left:15%;
-    margin-top:5%;
-    margin-right:30%;
-    padding-bottom:5%;
-    height:100%;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0 0 10px 0 rgba(0,0,0,.18);
-}
+
 .results-page-wrapper{
     font-family:sans-serif;
-    margin-left:5%;
-    margin-top:5%;
-    margin-right:30%;
-    padding-bottom:5%;
+    margin:5%;
+    width:100%;
+
     
     background-color: rgb(255, 255, 255);
     box-shadow: 0 0 10px 0 rgba(0,0,0,.18);
@@ -77,5 +69,22 @@ body{
 }
 
 .result-list{
-    margin-right:50%;
+    margin-right:0%;
 }
+
+.welcome{
+    width:30%;
+    margin-left:5%;
+    font-size: x-large;
+    font-weight:bold;
+}
+.result-welcome{
+    width:400px;
+}
+
+.parent-welcome{
+    display:inline;
+    float: left;
+}
+
+

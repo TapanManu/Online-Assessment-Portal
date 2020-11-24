@@ -1,11 +1,11 @@
 import React from "react";
-import Report from "./components/Report.js";
-import SideNav from "./components/sidenavbar";
-import Footer from "./components/Footer";
-import Header from "./components/header";
-import hari_component from "./exampage";
-import question from './hari';
-import notfound from './components/pagenotfound';
+import Report from "../components/Report.js";
+import Footer from "../components/Footer.js";
+import Header from "../components/header.js";
+import hari_component from "../exampage";
+import DashBoard from "./dashboard.js";
+
+import notfound from '../components/pagenotfound';
 import { Route, Link, BrowserRouter as Router } from "react-router-dom";
 
 import {
@@ -19,10 +19,10 @@ import {
   MDBModalFooter,
 } from "mdbreact";
 
-import "./style.css";
-import RankPage from "./rankpage.js";
+import "../style.css";
+import RankPage from "../rankpage.js";
 
-export default class Result extends React.Component {
+export default class Student extends React.Component {
   render() {
     return (
       <Router style={{ overflow: "hidden" }}>
@@ -37,17 +37,14 @@ export default class Result extends React.Component {
                 <MDBCol xl="2" lg="3" md="4" className="mb-md-0 mb-4">
                   <div class="btn-grp">
                     <MDBBtnGroup vertical className="py-2">
-                      <Link to="/test/Previous">
-                        <MDBBtn color="white">Previous Tests</MDBBtn>
+                      <Link to="/test/dashboard">
+                        <MDBBtn color="white">DashBoard</MDBBtn>
                       </Link>
-                      <Link to="/tests/Subject">
-                        <MDBBtn color="white">Subject Tests</MDBBtn>
+                      <Link to="/tests/examresults">
+                        <MDBBtn color="white">Exam Results</MDBBtn>
                       </Link>
-                      <Link to="/tests/Chapter">
-                        <MDBBtn color="white">Chapter Tests</MDBBtn>
-                      </Link>
-                      <Link to="/tests/mock">
-                        <MDBBtn color="white">Mock Tests</MDBBtn>
+                      <Link to="/tests/availableexams">
+                        <MDBBtn color="white">Available Exams</MDBBtn>
                       </Link>
                       <Link to="/tests/ranklist">
                         <MDBBtn color="white">Rank List</MDBBtn>
@@ -75,10 +72,10 @@ export default class Result extends React.Component {
                 </h2>
               </div>
               <div class="result-list" id="1">
-                <Route exact path="/test/Previous" component={hari_component} />
-                <Route exact path="/tests/Subject" component={RankPage} />
+                <Route exact path="/test/dashboard" component={DashBoard} />
+                <Route exact path="/tests/examresults" component={Report} />
                 <Route exact path="/tests/Chapter" component={notfound} />
-                <Route exact path="/tests/mock" component={hari_component} />
+                <Route exact path="/tests/availableexams" component={hari_component} />
                 <Route exact path="/tests/ranklist" component={RankPage} />
               </div>
             </div>
