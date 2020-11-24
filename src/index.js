@@ -9,11 +9,6 @@ import "./style.css";
 import registerServiceWorker from "./registerServiceWorker";
 // import Signup from "./components/signup";
 // import Instruction from "./components/instruction";
-<<<<<<< HEAD
-import QuestionCard from "./components/question";
-// import SideNav from "./components/sidenavbar";
-ReactDOM.render(<QuestionCard />, document.getElementById("root"));
-=======
 // import QuestionCard from "./components/question";
 //import SideNav from "./components/sidenavbar";
 import RankPage from './rankpage';
@@ -21,6 +16,5 @@ import RankPage from './rankpage';
 import Result from "./resultpage";
 import SideNav from "./components/sidenavbar";
 ReactDOM.render(<Result />, document.getElementById("root"));
->>>>>>> 62d71fd443b7a0da16db242e3b7031440f1f780a
 
 registerServiceWorker();
