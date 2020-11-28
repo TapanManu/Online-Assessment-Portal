@@ -21,7 +21,7 @@ class SideNav extends Component {
             <MDBCol xl="2" lg="3" md="4" className="mb-md-0 mb-4">
               <div class="btn-grp">
               <MDBBtnGroup vertical className="py-2">
-                <MDBBtn color="white">Previous Tests</MDBBtn>
+                <MDBBtn color="white" >Previous Tests</MDBBtn>
                 <MDBBtn color="white">Subject Tests</MDBBtn>
                 <MDBBtn color="white">Chapter Tests</MDBBtn>
                 <MDBBtn color="white">Mock Tests</MDBBtn>
@@ -34,7 +34,7 @@ class SideNav extends Component {
         <MDBContainer align color="#ccc" className="font-small pt-4 mt-4">
           <div className="footer-copyright text-center py-3">
             <MDBModalFooter>
-              <div className="mx-auto">
+              <div className="mr-auto">
                 <MDBBtn color="#f5f2f2">Tapan Manu</MDBBtn>
               </div>
             </MDBModalFooter>

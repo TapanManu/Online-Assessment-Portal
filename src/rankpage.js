@@ -11,14 +11,10 @@ export default class RankPage extends React.Component{
     render(){
         return(
             <>
-            <div class="page-header">
-                <Header/>
-            </div>
+           
             <div class="parent"> 
-                <div class="sidenav">
-                    <SideNav/>
-                </div>
-                <div class="page-wrapper">
+                
+               
                     <div class="rank-wrapper">
                         <div class="rank-header">
                             <h2><b>RANK LIST</b></h2>
@@ -40,12 +36,10 @@ export default class RankPage extends React.Component{
                         </div>
                         
                     </div>
-                </div>
-                
             </div>
-            <div class="footer">
-                    <Footer/>
-                </div>
+                
+            
+            
             </>
             
         );
