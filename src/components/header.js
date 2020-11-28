@@ -10,7 +10,7 @@ export default class Header extends React.Component{
             <div class="header">
             <BrowserRouter>
 
-                <MDBNav className="p-sm-3 mb-3" style={{backgroundColor:"#fff"}}>
+                <MDBNav className="p-sm-3" style={{backgroundColor:"#fff"}}>
                 <MDBNavLink to="#!" className="mx-auto" style={{color:"black"}}><MDBIcon icon="home" className="mr-sm-2"/>Home</MDBNavLink>
                 <MDBNavLink to="#!" className="mx-auto" style={{color:"black"}}><MDBIcon icon="bell" className="mr-sm-2"/>Notifications</MDBNavLink>
                 <MDBNavLink to="#!" className="mx-auto" style={{color:"black"}}><MDBIcon icon="cog" className="mr-sm-2"/>Settings</MDBNavLink>

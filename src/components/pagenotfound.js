@@ -4,7 +4,7 @@ import { MDBCard, MDBCardBody, MDBCardTitle, MDBCardText, MDBCardHeader, MDBBtn,
 const PageNotFound = () => {
 return (
 <MDBContainer>
-  <MDBCard style={{ width: "100", marginTop: "10rem" }}>
+  <MDBCard className="col-6" style={{  marginTop: "10rem" }}>
     <MDBCardBody>
       <MDBCardTitle><h1><b>&nbsp;&nbsp;&nbsp;&nbsp;404</b></h1></MDBCardTitle>
       <MDBCardText>

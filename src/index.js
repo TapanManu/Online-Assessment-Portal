@@ -7,14 +7,7 @@ import "./index.css";
 import "./style.css";
 
 import registerServiceWorker from "./registerServiceWorker";
-// import Signup from "./components/signup";
-// import Instruction from "./components/instruction";
-// import QuestionCard from "./components/question";
-//import SideNav from "./components/sidenavbar";
-import RankPage from './rankpage';
-//ReactDOM.render(<RankPage/>, document.getElementById("root"));
-import Result from "./resultpage";
-import SideNav from "./components/sidenavbar";
-ReactDOM.render(<Result />, document.getElementById("root"));
+import AdminHome from "./Admin/AdminHome";
+ReactDOM.render(<AdminHome />, document.getElementById("root"));
 
 registerServiceWorker();
